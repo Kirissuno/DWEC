@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio2</title>
+    
+    <style>
+        tr{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div id="titulo" align="center">
+        <h3>Número total de empleados: <span id="numempleados"></span></h3>
+    </div>
+    <div id="contenido" align="center">
+        <table border="1px" id="tabla">
+            <tr>
+                <td><b>Número de empleado</b></td>
+                <td><b>DNI</b></td>
+                <td><b>Nombre</b></td>
+                <td><b>Apellidos</b></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>77332344K</td>
+                <td>María</td>
+                <td>Pérez Izquierdo</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>23445677J</td>
+                <td>Javier</td>
+                <td>López Martínez</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>12345678H</td>
+                <td>Manuel</td>
+                <td>Sánchez Martos</td>
+            </tr>
+        </table>
+        <hr>
+        <div id="inputs">
+            <input type="number" name="id" id="idempleado" placeholder="Número de empleado">
+            <input type="text" name="dni" id="dni" placeholder="DNI">
+            <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+            <input type="text" name="apellidos" id="apellidos" placeholder="Apellidos">
+            <br>
+            <button type="submit" onclick="Insertar()">Insertar</button>
+            <button type="submit" onclick="Modificar()">Modificar</button>
+            <button type="submit" onclick="Borrar()">Borrar</button>
+        </div>
+    </div>
+    <div>
+        <ul>
+            <li>Para <b>Insertar</b> se tiene en cuenta el Número de empleado y el DNI</li>
+            <li>Para <b>Modificar</b> se debe hacer mediante el Número de empleado</li>
+            <li>Para <b>Borrar</b> se debe hacer mediante el DNI</li>
+        </ul>
+    </div>
+    <script src="ejercicio2.js"></script>    
+</body>
+</html>
