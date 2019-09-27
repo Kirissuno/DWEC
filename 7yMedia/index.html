@@ -12,7 +12,7 @@
         <tr>
             <td id="datosjugador">
                 Total Jugador: <span id="puntosjugador"></span> 
-                <button>Me planto</button>
+                <button id="btnplantar">Me planto</button>
             </td>
             <td id="datosbanca">
                 Total Banca: <span id="puntosbanca"></span>
@@ -21,25 +21,25 @@
         <tr id="cartas">
             <td>
                 <div id="jugador">
-                    <div id="cartaabajojugador" class="cartaabajo"><img src="imagenes/trasera_jug.jpg"></div>
+                    <div id="cartaabajojugador" class="cartaabajo"><img src="imagenes/trasera_jug.jpg" id="pedircartajugador"></div>
                     <div id="cartaarribajugador" class="cartaarriba"><img src="" id="cartajugador"></div>
                     <div id="arraycartasjugador" class="arraycartas"></div>
                 </div>
             </td>
             <td>
-                <div id="cartaabajobanca" class="cartaabajo"><img src="imagenes/trasera.jpg"></div>
-                <div id="cartaarribabanca" class="cartaarriba"></div>
+                <div id="cartaabajobanca" class="cartaabajo"><img src="imagenes/trasera.jpg" id="pedircartabanca"></div>
+                <div id="cartaarribabanca" class="cartaarriba"><img src="" id="cartabanca"></div>
                 <div id="arraycartasbanca" class="arraycartas"></div>
             </td>
         </tr>
         <tr>
-            <td colspan="2">
-                Gana: <span id="ganador"></span>
+            <td colspan="2" style="text-align: center">
+                Ganador: <span id="ganador"></span>
             </td>
         </tr>
     </table>
     <br>
-    <button type="reset">Reiniciar</button>
+    <button id="reiniciar">Reiniciar</button>
 
     <script src="script.js"></script>
 </body>
