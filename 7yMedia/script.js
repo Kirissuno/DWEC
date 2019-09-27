@@ -1,4 +1,4 @@
-let baraja = [1, 1, 1, 1, 2, 2, 2, 2, 3, 3, 3, 3, 4, 4, 4, 4, 5, 5, 5, 5, 6, 6, 6, 6, 7, 7, 7, 7, 8, 8, 8, 8, 9, 9, 9, 9, 10, 10, 10, 10];
+let baraja = [1,2,3,4,5,6,7,8,9,10];
 let tipo = ["Bastos", "Copas", "Espadas", "Oros"];
 
 let totaljugador = 0;
@@ -122,15 +122,14 @@ const ganador = () => {
     let jugador = "Has ganado!";
     let ganador = document.getElementById("ganador");
 
-    if(totaljugador <= 7.5){
-        if(totalbanco > totaljugador){
-            ganador.innerHTML = jugador;
-        }else if(totalbanco == totaljugador){
-            ganador.innerHTML = banca;
-        }else{
-            ganador.innerHTML = banca;
-        }
-    }else{
+    if(totalbanco == totaljugador){
         ganador.innerHTML = banca;
+    }else if (totalbanco > totaljugador && totalbanco <= 7.5) {
+        ganador.innerHTML = banca;
+    }else if ( totaljugador > 7.5 ){
+        ganador.innerHTML = banca;
+    }else{
+        ganador.innerHTML = jugador;
     }
+
 }
