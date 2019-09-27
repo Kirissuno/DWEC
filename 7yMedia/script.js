@@ -17,11 +17,12 @@ const tiposacado = () => {
 const pedircarta = document.getElementById("cartaabajojugador");
 
 pedircarta.addEventListener('click', (event) => {
-
+    let ganador = document.getElementById("ganador").innerText;
+    console.log(ganador);
     let numero = numerosacado();
     let tipo = tiposacado();
 
-    if(totaljugador < 7.5){
+    if(totaljugador < 7.5 && ganador == ""){
         
     
         if(!arraycombinaciones.includes(numero+tipo)){
