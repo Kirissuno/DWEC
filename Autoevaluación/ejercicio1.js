@@ -9,6 +9,7 @@ function inicializar(){
                 nombres.push(nombre);
                 i = nombres.length;
             }else{
+                alert("Ese nombre ya existe");
                 i = nombres.length;
             }
         }else{

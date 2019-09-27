@@ -1,0 +1,29 @@
+#box {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+#galery{
+    width: 100%;
+    height : auto;
+}
+
+.gallery__item{
+    border: 1px dotted black;
+    float: left;
+    width: 33.2%;
+    height: 50px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.gallery__item:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.gallery__item__rojo{
+    background-color: red;
+}

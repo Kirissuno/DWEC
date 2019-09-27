@@ -85,9 +85,6 @@ function Borrar(){
         listadni.splice(postBorrar,1);
         listaids.splice(postBorrar,1);
 
-        alert(listadni);
-        alert(listaids);
-
     }else{
         alert("DNI no existente");
     }

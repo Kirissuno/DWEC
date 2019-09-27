@@ -17,5 +17,4 @@ function ordenar(){
 
 	document.body.appendChild(tabla);
 
-	console.log(ciudades);
 }

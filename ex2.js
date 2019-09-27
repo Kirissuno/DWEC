@@ -18,7 +18,6 @@ function anadir(){
 
 function borrar(){
 	let posicion = document.getElementById('posicion').value;
-
 	let aborrar = document.getElementsByTagName('li')[posicion-1];
 	aborrar.remove();
 

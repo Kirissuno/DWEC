@@ -1,0 +1,38 @@
+#datosjugador button{
+    margin-right: 50%;
+    float: right;
+}
+
+#cartas td{
+    width: 600px;
+    height: 600px;
+    border: 1px solid black;
+    vertical-align: 0%;
+}
+
+.cartaabajo{
+    float: left;
+}
+
+.cartaarriba{
+    padding-top: 10%;
+    padding-right: 10%;
+    float: right;
+}
+
+.cartaarriba img{
+    width: 200px;
+    height: auto;
+}
+
+.arraycartas{
+    clear: both;
+}
+
+.arraycartas img{
+    padding-top: 5%;
+    padding-left: 2%;
+    margin-bottom: -25%;
+    width: 100px;
+    height: auto;
+}

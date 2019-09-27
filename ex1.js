@@ -27,6 +27,4 @@ function aplicar(){
 		td2.innerHTML = equipo;
 		td3.innerHTML = puntos;
 	}
-
-	console.log(x);
 }
