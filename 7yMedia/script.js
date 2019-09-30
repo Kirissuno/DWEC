@@ -74,9 +74,11 @@ pedircarta.addEventListener('click', () => {
 //Evento de click sobre el botón de Plantarse
 const btnplantar = document.getElementById("btnplantar");
 btnplantar.addEventListener('click', () => {
+    //Al pulsar el botón el dorso de las cartas se cambia apra que no pueda pedir cartas.
     document.getElementById("pedircartajugador").src = "imagenes/trasera.jpg";
     let salir = false;
 
+    //Y se activa la jugada de la banca.
     while(!salir){
         let numero = numerosacado();
         let tipo = tiposacado();
@@ -106,12 +108,15 @@ btnplantar.addEventListener('click', () => {
             }
         }else{
             salir = true;
-        }ganador();
+        }
+        //Se llama a la función que dice quien es el ganador.
+        ganador();
     }
     
 });
 
-
+//Función que es llamada solo cuando el jugador sobrepasa de 7.5 que pierda automáticamente.
+// y además cambie el dorso de la carta para que no salga que pida carta.
 const jugadorhaperdido = () => {
     
     if(totaljugador > 7.5){
@@ -123,12 +128,13 @@ const jugadorhaperdido = () => {
 
 }
 
+//Evento para reiniciar la página, que lo que hace es refrescar la página.
 let refresh = document.getElementById("reiniciar");
-
 refresh.addEventListener("click", () => {
     window.location.reload();
 });
 
+//Función que sirve para decidir quien es el ganador de la partida.
 const ganador = () => {
     let banca = "Ha ganado la banca";
     let jugador = "Has ganado!";
