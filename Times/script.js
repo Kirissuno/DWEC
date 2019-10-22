@@ -9,8 +9,8 @@ setInterval(() => {
 
     let hora = fecha.getHours();
     let minutos = fecha.getMinutes();
-    sec = fecha.getSeconds();
-    parrafo.innerHTML = `Hoy es ${dia} de ${meses[mes]} ${anyo} y son las <span id="hor">${hora}</span>:<span id="min">${minutos}</span>:<span id="seg">${sec}</span>`;
+    let sec = fecha.getSeconds();
+    parrafo.innerHTML = `Hoy es ${dia} de ${meses[mes]} del ${anyo} y son las <span id="hor">${hora}</span>:<span id="min">${minutos}</span>:<span id="seg">${sec}</span>`;
 
     document.body.appendChild(parrafo);
 
